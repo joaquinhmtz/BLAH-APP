@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import './../../../assets/css/navbar.css';
+import './../../assets/css/navbar.css';
 import opt1 from './../../../assets/img/BLÁICON-07.png';
 import opt2 from './../../../assets/img/BLÁICON2-14.png';
 import opt3 from './../../../assets/img/BLÁICON6-06.png';
@@ -20,7 +20,7 @@ const Menu = ({ open }) => {
                         <div className="container-circle"><img src={opt3} alt="" /> <span>opcion uno</span></div>
                     </div>
                 </div>
-                <a href="#">opcion uno</a>
+                <a href="#javascript">opcion uno</a>
             </li>
             <li>
                 <div className="menu-opt">
@@ -28,7 +28,7 @@ const Menu = ({ open }) => {
                         <div className="container-circle"><img src={opt2} alt="" /> <span>opcion dos</span></div>
                     </div>
                 </div>
-                <a href="#">opcion dos</a>
+                <a href="#javascript">opcion dos</a>
             </li>
             <li>
                 <div className="menu-opt">
@@ -36,7 +36,7 @@ const Menu = ({ open }) => {
                         <div className="container-circle"><img src={opt1} alt="" /> <span>opcion tres</span></div>
                     </div>
                 </div>
-                <a href="#">opcion tres</a>
+                <a href="#javascript">opcion tres</a>
             </li>
         </Ul>
     );
