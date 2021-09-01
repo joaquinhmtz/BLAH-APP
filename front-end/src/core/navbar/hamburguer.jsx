@@ -1,6 +1,6 @@
 import React, { useState }  from 'react';
-// import Menu from './menu';
 import styled from 'styled-components';
+import Menu from './menu';
 import './../../assets/css/core/navbar.css';
 
 const StyleIcon = styled.div `
@@ -38,7 +38,7 @@ const HamburguerMenu = () => {
                     <div />
                 </StyleIcon>
             </div>
-            {/* <Menu open={open}/> */}
+            <Menu open={open}/>
         </>
     );
 }
