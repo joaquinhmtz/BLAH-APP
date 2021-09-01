@@ -20,7 +20,7 @@ const Menu = ({ open }) => {
                         <div className="container-circle"><img src={opt3} alt="" /> <span>opcion uno</span></div>
                     </div>
                 </div>
-                <a href="#javascript">opcion uno</a>
+                <a href="/home">opcion uno</a>
             </li>
             <li>
                 <div className="menu-opt">
@@ -28,7 +28,7 @@ const Menu = ({ open }) => {
                         <div className="container-circle"><img src={opt2} alt="" /> <span>opcion dos</span></div>
                     </div>
                 </div>
-                <a href="#javascript">opcion dos</a>
+                <a href="/home">opcion dos</a>
             </li>
             <li>
                 <div className="menu-opt">
@@ -36,7 +36,7 @@ const Menu = ({ open }) => {
                         <div className="container-circle"><img src={opt1} alt="" /> <span>opcion tres</span></div>
                     </div>
                 </div>
-                <a href="#javascript">opcion tres</a>
+                <a href="/home">opcion tres</a>
             </li>
         </Ul>
     );
