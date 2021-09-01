@@ -12,7 +12,7 @@ function Routes () {
             <Header />
             <div className="container-app">
                 <Switch>
-                    <Route exact path="/" component={Home}></Route>
+                    <Route exact path="/home" component={Home}></Route>
                     <Route path="*" />
                 </Switch>
             </div>
