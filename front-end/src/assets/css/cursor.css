@@ -1,0 +1,19 @@
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #050505;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnimate .5 infinite alternate;
+}
+
+@keyframes cursorAnimate {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}

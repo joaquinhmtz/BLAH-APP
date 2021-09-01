@@ -1,0 +1,160 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    padding-top: 5px;
+    width: 120px;
+    height: 100%;
+    margin-left: -15px;
+}
+
+.navbar .logo img {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.navbar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 12px;
+    margin: 0 5px;
+    list-style: none;
+    width: calc(100% / 3);
+}
+
+.navbar ul li:last-child {
+    margin: 0 0;
+}
+
+.navbar ul li a {
+    display: none;
+    text-decoration: none;
+}
+
+.navbar .hamburguer {
+    display: none;
+    cursor: pointer;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+}
+
+.navbar .hamburguer:hover > .line-1,
+.navbar .hamburguer:hover > .line-2,
+.navbar .hamburguer:hover > .line-3 {
+    background-color: #e0e0e0;
+}
+
+.navbar .hamburguer .line-1,
+.navbar .hamburguer .line-2,
+.navbar .hamburguer .line-3 {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .navbar .hamburguer {
+        display: block;
+        z-index: 20;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        flex-flow: column nowrap;
+        background-color: #050505;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        padding-top: 5rem !important;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar ul li a {
+        display: block;
+        font-size: 1.5rem;
+        color: #f7f7f7;
+    }
+
+    .navbar ul li .menu-opt {
+        display: none;
+    }
+    
+    .navbar ul li a:hover {
+        text-decoration: underline;
+    }
+}
+
+.menu-opt{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} 
+
+.menu-opt .container-circle-main .container-circle img {
+    width: 100%;
+}
+
+.menu-opt .container-circle-main {
+    width: 100%;
+}
+
+.menu-opt .container-circle {
+    display: block;
+    background-color: transparent;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    border-radius: 50%;
+    font-size: 1rem;
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+}
+
+.menu-opt .container-circle-main .container-circle span {
+    display: none;
+}
+
+.menu-opt .container-circle-main .container-circle:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: #050505;
+    width: 100px;
+    height: 100px;
+    color: #f7f7f7;
+}
+
+.menu-opt .container-circle-main .container-circle:hover > img {
+    display: none;
+}
+
+.menu-opt .container-circle-main .container-circle:hover > span {
+    display: block;
+}
