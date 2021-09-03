@@ -25,7 +25,7 @@ class Home extends React.Component {
                 <Discounts />
                 <Modal>
                     <div className="modal-newsletter-init">
-                        <h2>¿GUSTA UN CHISMESITO CON SUPER DESCUENTOS?</h2>
+                        <h2>¿GUSTAS UN CHISMECITO CON SÚPER DESCUENTOS?</h2>
 
                         <div className="newsletter-image">
                             <img src={ImageNewsLetter} alt="" />
