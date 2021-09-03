@@ -69,7 +69,14 @@
     outline: none;
 }
 
-@media (max-width: 768px) {
+/* Mobile devices */
+@media (min-width:320px) and (max-width: 480px) {
+    .input-group-newsletter {
+        width: 100%;
+    }
+}
+/* iPads, Tablets */
+@media (min-width:481px) and (max-width: 768px) {
     .container-subs-form {
         flex-flow: column nowrap;
     }

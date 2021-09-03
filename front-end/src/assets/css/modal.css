@@ -87,8 +87,16 @@
 
 /* Mobile devices */
 @media (min-width:320px) and (max-width: 480px) {
+    .modal-newsletter-init h2 {
+        font-size: 1.2rem;
+    }
+
+    .modal-newsletter-init .newsletter-image {
+        width: 75%;
+    }
+
     .modal-sm, .modal-md, .modal-lg {
-        width: 80%;
+        width: 90%;
     }
 }
 /* iPads, Tablets */
@@ -99,7 +107,9 @@
 }
 /* Small screens, laptops */
 @media (min-width:769px) and (max-width: 1024px) {
-    
+    .modal-sm {
+        width: 60%;
+    }
 }
 /* Desktops, large screens */
 @media (min-width:1025px) and (max-width: 1200px) {
