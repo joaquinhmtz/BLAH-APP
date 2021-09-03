@@ -41,6 +41,27 @@
     transform-origin: left;
 }
 
+.btn-newsletter {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    color: #f5f5f5;
+    background-color: #050505;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.btn-newsletter:hover {
+    opacity: 0.8;
+}
+
+.btn-newsletter:active {
+    transform: translateY(3px);
+}
+
 @media (max-width: 768px) {
     
 }

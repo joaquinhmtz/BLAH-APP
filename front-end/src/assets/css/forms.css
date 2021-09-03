@@ -15,6 +15,19 @@
     color: #ccc;
 }
 
+/* INPUT WITH ICON */
+.input-group {
+    position: relative;
+    color: #ccc;
+    width: 100%;
+}
+
+.input-group svg {
+    position: absolute;
+    padding: 10px;
+    min-width: 50px;
+}
+
 /** OTHER STYLES **/
 .container-subs-form { 
     width: 100%;
@@ -29,6 +42,31 @@
     height: 40px;
     font-size: .95rem;
     margin-right: 15px;
+}
+
+.input-group-newsletter {
+    position: relative;
+    color: #ccc;
+    width: 70%;
+    margin: 15px 0;
+}
+
+.input-group-newsletter i {
+    position: absolute;
+    padding: 17px;
+    min-width: 50px;
+    font-size: 1rem;
+}
+
+.input-group-newsletter input {
+    width: 100%;
+    border: 2px solid #ebebeb;
+    border-radius: 5px;
+    padding: 15px 10px 15px 50px;
+    background-color: #f5f5f5;
+    line-height: 22px;
+    font-size: 1.1rem;
+    outline: none;
 }
 
 @media (max-width: 768px) {
