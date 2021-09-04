@@ -10,7 +10,7 @@ import { ModalHook } from './../../../shared/components/ModalHook';
 
 
 const ModalInit = () => {
-    const [isOpenModal, modalNewsletterOpen, modalNewsletterClose] = ModalHook(false);
+    const [isOpenModal, modalNewsletterOpen, modalNewsletterClose] = ModalHook(true);
     const band = useRef(false);
     
     useEffect(() => {
