@@ -4,7 +4,6 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import './../../assets/css/modal.css';
 
 const Modal = ({ children, isOpen, closeModal }) => {
-    console.log('isOpen:', isOpen, closeModal)
     const handleModalClick = (e) => e.stopPropagation();
 
     return (

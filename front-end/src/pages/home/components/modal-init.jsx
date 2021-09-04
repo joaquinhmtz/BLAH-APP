@@ -14,16 +14,16 @@ const ModalInit = () => {
 
     useEffect( () => {
         const timeoutID = window.setTimeout(() => {
-            console.log('aparezco perro');
+
             modalNewsletterOpen();
-        }, 10000);   
+        }, 6000);   
         
         return () => window.clearTimeout(timeoutID );
     });
 
     return (
         <div>
-            <button onClick={modalNewsletterOpen}>_Click</button>
+            {/* <button onClick={modalNewsletterOpen}>_Click</button> */}
             <Modal isOpen={isOpenModal} closeModal={modalNewsletterClose}>
                 <div className="modal-newsletter-init">
                     <h2>¿GUSTAS UN CHISMECITO CON SÚPER DESCUENTOS?</h2>
