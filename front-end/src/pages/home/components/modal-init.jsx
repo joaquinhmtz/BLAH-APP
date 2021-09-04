@@ -13,7 +13,7 @@ const ModalInit = () => {
     const [isOpenModal, modalNewsletterOpen, modalNewsletterClose] = ModalHook(false);
 
     useEffect( () => {
-        const timeoutID = window.setTimeout(() => {
+        window.setTimeout(() => {
 
             modalNewsletterOpen();
         }, 6000);   
