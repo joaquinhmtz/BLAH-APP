@@ -17,8 +17,6 @@ const ModalInit = () => {
 
             modalNewsletterOpen();
         }, 6000);   
-        
-        return () => window.clearTimeout(timeoutID );
     });
 
     return (
