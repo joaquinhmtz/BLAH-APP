@@ -1,5 +1,5 @@
 
-import { React, useEffect } from 'react';
+import { React, useEffect, useRef } from 'react';
 
 import Modal from './../../../shared/components/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,13 +10,15 @@ import { ModalHook } from './../../../shared/components/ModalHook';
 
 
 const ModalInit = () => {
-    const [isOpenModal, modalNewsletterOpen, modalNewsletterClose] = ModalHook(false);
-
-    useEffect( () => {
-        window.setTimeout(() => {
-
-            modalNewsletterOpen();
-        }, 6000);   
+    const [isOpenModal, modalNewsletterOpen, modalNewsletterClose] = ModalHook(true);
+    const band = useRef(false);
+    
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (!band) modalNewsletterOpen();
+            band.current = true;
+        }, 4000);
+        return () => clearTimeout(timer);
     });
 
     return (
