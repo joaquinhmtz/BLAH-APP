@@ -1,5 +1,5 @@
 .modal {
-    display: flex;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,6 +10,8 @@
     background-color: rgba(0, 0, 0, 0.4);
     justify-content: center;
     align-items: center;
+    animation-name: animatetop;
+    animation-duration: 0.4s
 }
 
 .modal .container-modal {
@@ -83,6 +85,11 @@
 
 .modal-newsletter-init .newsletter-image img {
     width: 80%;
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
 }
 
 /* Mobile devices */
