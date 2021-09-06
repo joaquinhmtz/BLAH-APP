@@ -5,3 +5,11 @@
 .p-20-v {
     padding: 20px 0;
 }
+
+.font-thin {
+    font-weight: 100;
+}
+
+.font-bold {
+    font-weight: bold;
+}

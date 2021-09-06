@@ -184,6 +184,19 @@
     transform: scaleX(1);
 }
 
+/* Mobile devices */
+@media (min-width:320px) and (max-width: 480px) {
+    .input-subscribe {
+        width: 72%;
+        margin-right: 10px;
+    }
+}
+
+/* Small screens, laptops */
+@media (min-width:769px) and (max-width: 1024px) {
+
+}
+
 @media (max-width: 768px) {
     .footer  {
         padding: 0 50px;
