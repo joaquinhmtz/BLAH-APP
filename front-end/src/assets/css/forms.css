@@ -74,6 +74,11 @@
     .input-group-newsletter {
         width: 100%;
     }
+
+    .input-subscribe {
+        width: 70%;
+        margin-right: 10px;
+    }
 }
 /* iPads, Tablets */
 @media (min-width:481px) and (max-width: 768px) {
@@ -83,5 +88,12 @@
 
     .input-subscribe {
         width: 75%;
+    }
+}
+/* Small screens, laptops */
+@media (min-width:769px) and (max-width: 1024px) {
+    .input-subscribe {
+        width: 68%;
+        margin-right: 12px;
     }
 }

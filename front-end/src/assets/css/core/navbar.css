@@ -75,7 +75,7 @@
     }
 
     .navbar ul {
-        justify-content: center;
+        justify-content: end;
         flex-flow: column nowrap;
         background-color: #050505;
         position: fixed;
@@ -84,6 +84,7 @@
         height: 100vh;
         width: 100%;
         transition: transform 0.3s ease-in-out;
+        padding-top: 10rem;
     }
 
     .navbar ul li {

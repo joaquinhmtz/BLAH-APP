@@ -186,10 +186,7 @@
 
 /* Mobile devices */
 @media (min-width:320px) and (max-width: 480px) {
-    .input-subscribe {
-        width: 72%;
-        margin-right: 10px;
-    }
+
 }
 
 /* Small screens, laptops */
