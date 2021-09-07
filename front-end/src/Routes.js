@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './core/header/header.jsx';
 import Footer from './core/footer/footer.jsx';
+import SideTab from './core/others/SideTab.jsx';
 // import Cursor from './core/components/cursor.jsx';
 import Home from './pages/home/home.jsx';
 
@@ -11,6 +12,7 @@ function Routes () {
             {/* <Cursor /> */}
             <Header />
             <div className="container-app">
+                <SideTab />
                 <Switch>
                     <Route exact path="/" component={Home}></Route>
                     <Route path="*" />

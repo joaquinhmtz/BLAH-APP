@@ -202,6 +202,33 @@
     font-size: .93rem;
 }
 
+.sidetab {
+    background-color: red;
+    height: 14rem;
+    padding: 10px;
+    position: fixed;
+    right: 0;
+    width: 3.2rem;
+    top: 10rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.sidetab span {
+    transform: rotate(270deg);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.sidetab:hover {
+    cursor: pointer;
+    width: 4rem;
+}
+
 /* Mobile devices */
 @media (min-width:320px) and (max-width: 480px) {
     .separator-grid-home {
