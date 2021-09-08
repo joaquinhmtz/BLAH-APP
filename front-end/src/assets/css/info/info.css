@@ -1,0 +1,25 @@
+.container-info-bla {
+    width: 100%;
+    background-color: transparent;
+    padding: 25px 0;
+    margin-bottom: 20px;
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-info-bla .info-img {
+    width: 40%;
+}
+
+.container-info-bla .info-img img {
+    width: 100%;
+}
+
+.container-info-bla .info-paragraph {
+    padding: 20px;
+    font-size: 1rem;
+    width: 40%;
+}
