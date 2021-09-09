@@ -1,4 +1,6 @@
 import React from 'react';
+import ContactInfo from './contact-info';
+import ContactHeader from './contact-header';
 import './../../assets/css/info/info.css';
 
 class Contact extends React.Component {
@@ -6,7 +8,8 @@ class Contact extends React.Component {
         
         return (
             <div className="container-info-bla">
-                Contact
+                <ContactHeader />
+                <ContactInfo />
             </div>
         );
 
