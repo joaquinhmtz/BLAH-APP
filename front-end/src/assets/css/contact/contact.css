@@ -45,6 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .contact-header h3 {
@@ -52,15 +53,27 @@
     font-size: 2rem;
 }
 
+.contact-header .paragraphs {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.contact-header .paragraphs p {
+    padding: 10px 0;
+}
+
 /* Mobile devices */
 @media (min-width:320px) and (max-width: 480px) {
     .container-info-bla {
         grid-template-columns: 1fr;
+        padding: 10px 50px;
     }
 }
 
 @media (min-width:481px) and (max-width: 768px) {
     .container-info-bla {
         grid-template-columns: 1fr;
+        padding: 10px 50px;
     }
 }
